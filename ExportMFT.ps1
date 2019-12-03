@@ -231,6 +231,7 @@ PS C:\> Export-MFT -ComputerName Server01 -Volume F
             'MFT File' = $OutputFilePath
         }
         New-Object -TypeName PSObject -Property $Properties
+        Compress-Archive -Path $OutputFilePath -DestinationPath $env:TEMP\Export-MFT.zip
     }
 
     if ($PSBoundParameters['ComputerName']) {   
