@@ -1,19 +1,4 @@
-Skip to content
- 
-Search…
-All gists
-Back to GitHub
-Sign in
-Sign up
-Instantly share code, notes, and snippets.
-
-@secabstraction secabstraction/Export-MFT.ps1
-Last active 2 months ago
-73
- Code Revisions 3 Stars 7 Forks 3
-<script src="https://gist.github.com/secabstraction/4044f4aadd3ef21f0ca9.js"></script>
-  
- Export-MFT.ps1
+Export-MFT.ps1
 function Export-MFT {
 <#
 .SYNOPSIS
