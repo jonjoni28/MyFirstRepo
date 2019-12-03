@@ -1,4 +1,3 @@
-Export-MFT.ps1
 function Export-MFT {
 <#
 .SYNOPSIS
@@ -216,8 +215,6 @@ PS C:\> Export-MFT -ComputerName Server01 -Volume F
             'MFT File' = $OutputFilePath
         }
         New-Object -TypeName PSObject -Property $Properties
-		    Compress-Archive -Path $OutputFilePath -DestinationPath $env:TEMP\ExportMFT.zip
-		
     }
 
     if ($PSBoundParameters['ComputerName']) {   
@@ -234,16 +231,3 @@ PS C:\> Export-MFT -ComputerName Server01 -Volume F
     $ScriptTime.Stop()
     Write-Verbose "Done, execution time: $($ScriptTime.Elapsed)"
 }
- to join this conversation on GitHub. Already have an account? Sign in to comment
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
